@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-struct array
-{
+struct array{
     int tSize;
     int uSize;
     int* ptr;
@@ -13,8 +12,7 @@ struct array* creatArray(struct array *p, int used_size, int total_size){
 void setVal(struct array *m, int used_size, int item){
     
 }
-int main()
-{
+int main(){
     struct array *myArray;
     int used_size = 4;
     int total_size = 10;
