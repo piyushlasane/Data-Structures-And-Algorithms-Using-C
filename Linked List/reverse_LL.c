@@ -1,28 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
-struct node
-{
+struct node{
     int data;
     struct node *next;
 };
 
-void traversal(struct node *ptr)
-{
-    while (ptr != NULL)
-    {
+void traversal(struct node *ptr){
+    while (ptr != NULL){
         printf("%d ", ptr->data);
         ptr = ptr->next;
     }
 }
 
-struct node* reverseLL(struct node* head)
-{
+struct node* reverseLL(struct node* head){
     struct node *prev = NULL;
     struct node *nxt = NULL;
     struct node *curr = head;
 
-    while (curr!=NULL)
-    {
+    while (curr!=NULL){
         nxt = curr->next;
         curr->next = prev;
         prev = curr;
@@ -31,8 +26,7 @@ struct node* reverseLL(struct node* head)
     return prev;
 }
 
-int main()
-{
+int main(){
     // Allocates mamory in Linked list in heap
     struct node *first = (struct node *)malloc(sizeof(struct node));
     struct node *second = (struct node *)malloc(sizeof(struct node));
