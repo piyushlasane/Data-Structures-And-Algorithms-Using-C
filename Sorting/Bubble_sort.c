@@ -24,7 +24,7 @@ void bubble_sort(int *arr, int n) {
 }
 
 int main() {
-    int arr[] = {1, 9, 10, 13, 14, 24, 7, 38};
+    int arr[] = {1, 8, 10, 13, 14, 24, 7, 38};
     int n = sizeof(arr)/sizeof(arr[0]);
     printf("Before Sorting: ");
     traverse(arr, n);
